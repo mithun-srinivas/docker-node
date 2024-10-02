@@ -7,9 +7,8 @@ RUN bash /tmp/nodesource_setup.sh
 RUN apt-get upgrade -y
 RUN apt install -y nodejs
 
-COPY package.json package.json
-COPY package-lock.json package-lock.json
-COPY index.js index.js
+RUN git clone https://github.com/mithun-srinivas/docker-node.git
+RUN cd docker-node
 
 RUN npm install 
 
