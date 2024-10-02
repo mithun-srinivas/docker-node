@@ -1,0 +1,16 @@
+version: '2.0'
+
+services:
+  postgres:
+    image: postgres
+    port: 
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: review
+      POSTGRES_PASSWORD: password
+
+  redis:
+    image: redis
+    port:
+      - '6379:6379'

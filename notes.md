@@ -73,6 +73,7 @@ Docker and VM are ways of virtualization
 - `docker logs <container-name>`: Look docker logs
 - `sudo docker exec -it <container_id> /bin/bash`: Open container terminal.
 - `exit`:come out of container terminal.
+- `docker rmi <image-id>:<version>`: Remove docker image
 
 ### Container port v/s HOST port
 
