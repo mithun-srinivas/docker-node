@@ -3,7 +3,7 @@ version: '2.0'
 services:
   postgres:
     image: postgres
-    port: 
+    ports: 
       - '5432:5432'
     environment:
       POSTGRES_USER: postgres
@@ -12,5 +12,5 @@ services:
 
   redis:
     image: redis
-    port:
+    ports:
       - '6379:6379'
